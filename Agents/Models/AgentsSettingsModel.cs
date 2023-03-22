@@ -5,15 +5,15 @@ namespace Agents.Models
     {
         const string idAgentA = "A";
         const string nameAgentA = "AgentA";
-        List<string> operationAgentA = new List<string> { "Mean", "Stairs"};
+        List<string> operationAgentA = new List<string> { "Obtener Media", "Escribir Escalera"};
 
         const string idAgentB = "B";
         const string nameAgentB = "AgentB";
-        List<string> operationAgentB = new List<string> { "HarmonicMean", "Stairs" };
+        List<string> operationAgentB = new List<string> { "Obtener Media armónica", "Escribir Escalera" };
 
         const string idAgentC = "C";
         const string nameAgentC = "AgentC";
-        List<string> operationAgentC = new List<string> { "Median", "Stairs" };
+        List<string> operationAgentC = new List<string> { "Obtener Mediana", "Escribir Escalera" };
 
         public List<AgentsModel> agentsModel { get; set; }
 

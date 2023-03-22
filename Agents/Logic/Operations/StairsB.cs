@@ -7,7 +7,7 @@ namespace Agents.Logic.Operations
     {
         public StairsB(int value)
         {
-            for (int stairNumber = value; stairNumber >= 0; stairNumber--)
+            for (int stairNumber = value; stairNumber > 0; stairNumber--)
             {
 
                 for (int i = 0; i <= (value - stairNumber - 1 ) ; i++)
