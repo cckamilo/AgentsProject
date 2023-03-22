@@ -9,82 +9,41 @@ AgentsSettingsModel data = new AgentsSettingsModel();
 //Patron de diseño Factory Method
 FactoryMethod factory;
 factory = new FactoryAgents();
-List<double> array = new List<double>();
-int selectedAgent;
-int selectedOperation;
+//Interfaz de logica para agentes
+IAgentsLogic iAgents;
+
 try
-{
+{    
+    iAgents = new AgentsLogic();
     //Seleccion de agentes
-    Console.WriteLine("Seleccione el número del agente:");
-    for (int i = 0; i < data.agentsModel.Count; i++)
-    {
-        var count = (i + 1);
-        Console.WriteLine(data.agentsModel[i].name + " --> " + count);
-    }
-    selectedAgent = Convert.ToInt32(Console.ReadLine());
-    if (selectedAgent <= data.agentsModel.Count)
+    var agents = iAgents.getAgents(data);
+    if (agents)
     {
         //Seleccion de operaciones por agente
-        Console.WriteLine("Seleccione el número de la operacion:");
-        var operations = data.agentsModel[selectedAgent - 1].operations;
-        for (int i = 0; i < operations.Count; i++)
+        var operations = iAgents.getOperations(data);
+        if (operations.Any())
         {
-            var count = (i + 1);
-            Console.WriteLine(operations[i] + " --> " + count);
-        }
-        selectedOperation = Convert.ToInt32(Console.ReadLine());
-        if (selectedOperation <= operations.Count)
-        {
-
-            if (selectedOperation > 1)
-            {
-                //Cantidad de registros a calcular
-                Console.WriteLine("Tamaño de la escalera");
-                var value = Convert.ToInt32(Console.ReadLine());
-                if (value > 0 && value < 100)
-                {
-                    //Ejecucion de configuracion por agente
-                    factory.getStaircase(selectedAgent, value);
-                    Console.ReadLine();
-                }
-                else
-                {
-                    Console.WriteLine("Datos incorrectos");
-                    Console.ReadLine();
-                }           
-            }
-            else
-            {
-                //Cantidad de registros a calcular
-                Console.WriteLine("Cantidad de valores a calcular");
-                int values = Convert.ToInt32(Console.ReadLine());
-                for (int i = 1; i <= Convert.ToInt32(values); i++)
-                {
-                    Console.WriteLine($"Ingrese el #{i}");
-                    var item = Convert.ToDouble(Console.ReadLine());
-                    array.Add(item);
-                }
-                //Ejecucion de configuracion por agente
-                factory.getMedia(selectedAgent, array.ToArray());
-                Console.ReadLine();
-
-            }
+            //Operacion de metódos por agentes
+            //getMedia - getStaircase
+            iAgents.postAgents(operations, factory);
         }
         else
         {
             Console.WriteLine("Datos incorrectos");
+            Console.ReadLine();
         }
-
     }
     else
     {
         Console.WriteLine("Datos incorrectos");
+        Console.ReadLine();
     }
-
+   
 }
 catch (Exception ex)
 {
     Console.WriteLine("Algo salio mal " + ex.Message);
+    Console.ReadLine();
 }
 
 

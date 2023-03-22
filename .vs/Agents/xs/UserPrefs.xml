@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{FB21B38B-E268-46CE-B41B-9428B01974C5}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Agents/Logic/Operations/StairsC.cs">
+    <Files>
+      <File FileName="Agents/Logic/FactoryAgents.cs" Line="32" Column="1" />
+      <File FileName="Agents/Program.cs" Line="48" Column="1" />
+      <File FileName="Agents/Logic/Operations/StairsA.cs" Line="22" Column="14" />
+      <File FileName="Agents/Logic/Operations/StairsB.cs" Line="23" Column="14" />
+      <File FileName="Agents/Logic/Operations/StairsC.cs" Line="26" Column="18" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Agents" expanded="True">
+            <Node name="Agents" expanded="True">
+              <Node name="Logic" expanded="True">
+                <Node name="Operations" expanded="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Agents PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
