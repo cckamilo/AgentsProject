@@ -1,11 +1,19 @@
 ﻿<Properties StartupConfiguration="{FB21B38B-E268-46CE-B41B-9428B01974C5}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Agents PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench ActiveDocument="Agents/Logic/Operations/StairsC.cs">
     <Files>
-      <File FileName="Agents/Logic/FactoryAgents.cs" Line="32" Column="1" />
-      <File FileName="Agents/Program.cs" Line="48" Column="1" />
-      <File FileName="Agents/Logic/Operations/StairsA.cs" Line="22" Column="14" />
-      <File FileName="Agents/Logic/Operations/StairsB.cs" Line="23" Column="14" />
-      <File FileName="Agents/Logic/Operations/StairsC.cs" Line="26" Column="18" />
+      <File FileName="Agents/Program.cs" />
+      <File FileName="Agents/Logic/Interfaces/IAgentsLogic.cs" />
+      <File FileName="Agents/Logic/Interfaces/Response.cs" Line="19" Column="1" />
+      <File FileName="Agents/Logic/Operations/StairsB.cs" Line="1" Column="1" />
+      <File FileName="Agents/Logic/Operations/StairsA.cs" Line="25" Column="6" />
+      <File FileName="Agents/Logic/Operations/StairsC.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,20 +21,15 @@
           <Node name="Agents" expanded="True">
             <Node name="Agents" expanded="True">
               <Node name="Logic" expanded="True">
-                <Node name="Operations" expanded="True" />
+                <Node name="Interfaces" expanded="True" />
+                <Node name="Operations" expanded="True">
+                  <Node name="StairsC.cs" selected="True" />
+                </Node>
               </Node>
-              <Node name="Models" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Agents PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
